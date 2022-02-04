@@ -1,0 +1,270 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('../polices/ballpark.eot');
+    src: url('../polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('../polices/ballpark.woff') format('woff'),
+         url('../polices/ballpark.ttf') format('truetype'),
+         url('../polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('../polices/dayrom.eot');
+    src: url('../polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('../polices/dayrom.woff') format('woff'),
+         url('../polices/dayrom.ttf') format('truetype'),
+         url('../polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: block;
+    margin: 0px;
+    font-family: 'Dayrom', sans-serif;
+}
+
+header{
+    margin: auto;
+    display: flex;
+    background: url("../images/separateur.png") repeat-x bottom, url("../images/fond_jaune.png") repeat fixed;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+}
+
+header div, header nav{
+    width: 50%;
+}
+
+.conteneur-logo{
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.conteneur-logo img{
+    width: 30%;
+}
+
+.conteneur-logo p{
+    font-family: 'BallparkWeiner', sans-serif;
+    font-size: 2em;
+    margin-bottom: -25px !important;
+}
+
+.conteneur-logo p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.slogan{
+    font-size: 1.3em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+nav ul{
+    display: flex;
+    /* margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px; */
+}
+
+nav ul li{
+    list-style-type: none;
+    padding-left: 30px;
+    /* margin-right: 5%; */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+nav ul li a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+main{
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 1%;
+    /* background-size: 100%; */
+    /* background: url("../images/ombre.png"); */
+    /* background-size: cover; */
+    /* height: 200px; */
+}
+
+.banniere{
+    background: url("../images/sanfrancisco.jpg");
+    background-size: cover;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.info-banniere{
+    background-color: rgba(0, 0, 0, 0.918);
+    /* opacity: 0.7; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* margin: 3px; */
+}
+
+.info-banniere p{
+    color: white;
+    opacity: 1;
+}
+
+.bouton{
+    background: url("../images/fond_degraderouge.png") repeat;
+    border-radius: 5px;
+    padding:  5px 10px 5px 10px;
+    opacity: 1;
+
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+section article{
+    width: 68%;
+    margin-right: 2%;
+}
+
+section aside{
+    width: 30%;
+    display: flex;
+}
+
+.contenue-aside{
+    background-color: gray;
+    border-radius: 10px;
+    padding: 3%;
+    height: 400px;
+    color: white;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.contenue-aside p, .contenue-aside h1{ 
+    opacity: 0.8;
+}
+
+.contenue-aside p{ 
+    opacity: 0.8;
+    margin-block-start: 1em;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.logo-reseaux-sociaux {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenue-aside h1{
+    font-size: 1.5em;
+}
+
+section article h1{
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+}
+
+section article p, section aside p{
+    text-align: justify;
+}
+
+#photo_zozor{
+    text-align: center;
+}
+
+h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.fleche-aside {
+    margin-top: 55%;
+}
+
+section article p a{
+    color: red;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 3%;
+    background: url("../images/ico_top.png") no-repeat top center, url("../images/separateur.png") repeat-x top, url("../images/fond_jaune.png") repeat fixed;
+}
+
+footer h1 {
+    font-size: 1.8em;
+}
+
+#listes_amis{
+    display: flex;
+}
+
+#listes_amis li {
+    list-style-image: url("../images/ico_liensexterne.png");
+}
+
+#listes_amis a {
+    text-decoration: none;
+    color: red;
+}
+
+#listes_amis ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 1.8em;
+    padding-inline-start: 17px;
+}
+
+footer img{
+    border: 2px black solid;
+}
+
+main{
+    padding-bottom: 3%;
+    background-color: rgb(77, 47, 3);
+    background: url("../images/fond_jaune.png") repeat fixed;
+}
